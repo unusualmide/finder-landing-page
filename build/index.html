@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finder</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body
+    class="min-h-screen antialiased bg-contain md:bg-cover py-3 md:py-6 px-4 md:px-20"
+    style="background-image: url(img/background.png)"
+  >
+    <div
+      class="overlay w-full h-full bg-white/20 backdrop-blur-sm absolute -z-30 left-0 top-0 hidden"
+    ></div>
+    <div class="flex justify-start md:justify-center items-center">
+      <img src="img/logo.png" alt="logo" width="105" />
+      <div class="md:hidden ml-auto">
+        <i
+          class="fa-solid fa-bars fa-lg md:ml-0 block button-open-menu"
+          style="color: #f0f2f5"
+        ></i>
+      </div>
+      <div
+        class="hidden md:inline-flex gap-10 text-sm text-white ml-0 md:ml-auto"
+      >
+        <a class="hover:text-red-600" href="#">Home</a>
+        <a class="hover:text-red-600" href="#">About</a>
+        <a class="hover:text-red-600" href="#">Features</a>
+        <a class="hover:text-red-600" href="#">Blog</a>
+        <a class="hover:text-red-600" href="#">Contact</a>
+      </div>
+    </div>
+    <h2
+      class="pt-40 md:pt-[277px] text-white text-center md:text-start text-5xl md:text-6xl font-bold"
+    >
+      Go On <span class="md:block">Your First Date.</span>
+    </h2>
+    <p class="text-white text-sm py-5 text-center md:text-start">
+      Connect With People You Know But Haven't Met Yet
+    </p>
+    <div class="flex justify-center md:justify-start">
+      <a class="bg-red-600 text-white py-3 px-6 text-sm" href="about.html"
+        ><button>Know More Here</button></a
+      >
+    </div>
+    <div
+      class="flex justify-center items-center md:ml-auto mt-5 md:mt-10 p-3 gap-2 hover:border-none md:w-[16%] md:hover:bg-red-600/70 hover:rounded-lg"
+    >
+      <a class="text-white text-xs font-medium" href="#">DOWNLOAD THE APP</a>
+      <img
+        class="animate-bounce"
+        src="img/down-arrow.png"
+        alt="down-arrow"
+        width="15"
+      />
+    </div>
+    <div class="hidden dropmenu">
+      <div
+        class="inline-flex md:hidden flex-col justify-center p-6 gap-6 bg-white w-[60%] border shadow-md rounded-md absolute right-3 top-3"
+      >
+        <div class="inline-flex justify-start items-center">
+          <a class="hover:text-red-600" href="#">Home</a>
+          <i
+            class="fa-solid fa-xmark ml-auto fa-lg button-close-menu"
+            style="color: #7a7b7c"
+          ></i>
+        </div>
+        <a class="hover:text-red-600" href="#">About</a>
+        <a class="hover:text-red-600" href="#">Features</a>
+        <a class="hover:text-red-600" href="#">Blog</a>
+        <a class="hover:text-red-600" href="#">Contact</a>
+        <div class="flex">
+          <p class="text-gray-400">Switch theme</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="gray"
+            class="w-6 h-6 ml-auto toogle-light"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
